@@ -6,8 +6,8 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 200px); /* Three equal-width columns */
-            grid-gap: 10px; /* Gap between grid items */
+            grid-template-columns: repeat(3, 200px); 
+            grid-gap: 10px; 
         }
 
         .grid-item {
@@ -17,77 +17,104 @@
         }
 
         header {
-            display: flex; /* Menggunakan flexbox untuk mengatur elemen secara horizontal */
-            align-items: center; /* Menyelaraskan elemen vertikal di tengah */
+            display: flex; 
+            align-items: center; 
+            background-color: #3498db; 
+            padding: 10px; 
         }
 
         h1 {
-            margin-left: 20px; /* Jarak antara judul dan logo */
+            margin-left: 20px; 
+        }
+
+        nav {
+            background-color: #333; 
+        }
+
+        nav ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px; 
+        }
+
+        nav ul li a {
+            text-decoration: none; 
+            color: #fff; 
+        }
+
+        main {
+            padding: 20px; 
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333; 
+            color: #fff;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" width="100">
-        <h1>Schemastore ITS</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sign Up</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Shopping Cart</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <!-- Display featured products here -->
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h4>Hoodie</h4>
-                    <img src="img/hoodie.jpg" width="100" height="100">
-                    <h4>Rp.200.000</h4>
+        <header>
+            <img src="img/logo.png" width="100">
+            <h1>Schemastore ITS</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+            
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h4>Hoodie</h4>
+                        <img src="img/hoodie.jpg" width="100" height="100">
+                        <h4>Rp.200.000</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>T-Shirt</h4>
+                        <img src="img/tshirt.png" width="100" height="100">
+                        <h4>Rp.150.000</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Tumbler</h4>
+                        <img src="img/tumblr.png" width="100" height="100">
+                        <h4>Rp.100.000</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Stikers</h4>
+                        <img src="img/stikers.png" width="100" height="100">
+                        <h4>Rp.20.000</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Totebag</h4>
+                        <img src="img/totebag.png" width="100" height="100">
+                        <h4>Rp.80.000</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Lanyard</h4>
+                        <img src="img/Lanyard.png" width="100" height="100">
+                        <h4>Rp.30.000</h4>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <h4>T-Shirt</h4>
-                    <img src="img/tshirt.png" width="100" height="100">
-                    <h4>Rp.150.000</h4>
-                </div>
-                <div class="grid-item">
-                    <h4>Tumbler</h4>
-                    <img src="img/tumblr.png" width="100" height="100">
-                    <h4>Rp.100.000</h4>
-                </div>
-                <div class="grid-item">
-                    <h4>Stikers</h4>
-                    <img src="img/stikers.png" width="100" height="100">
-                    <h4>Rp.20.000</h4>
-                </div>
-                <div class="grid-item">
-                    <h4>Totebag</h4>
-                    <img src="img/totebag.png" width="100" height="100">
-                    <h4>Rp.80.000</h4>
-                </div>
-                <div class="grid-item">
-                    <h4>Lanyard</h4>
-                    <img src="img/Lanyard.png" width="100" height="100">
-                    <h4>Rp.30.000</h4>
-                </div>
-            </div>
-        </section>
-        
-    </main>
-
-
-
-
-    <footer>
-        <p>&copy; 2023 Schemastore, Inc</p>
-    </footer>
+            </section>
+            
+        </main>
+    
+        <footer>
+            <p>&copy; 2023 Schemastore, Inc</p>
+        </footer>
 </body>
 </html>
-
-    
